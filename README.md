@@ -215,15 +215,21 @@ The Bengali version of this self-help guide (Also written by DeepSeek):
 ### উইন্ডোজ ব্যবহারকারীদের জন্য:
 
 ১. `process_videos.bat` এবং `video_length_estimation.bat` ডাউনলোড করুন
+
 ২. এগুলি আপনার ভিডিও ফাইল সহ ফোল্ডারে রাখুন
+
 ৩. `process_videos.bat` এ ডাবল-ক্লিক করুন
+
 ৪. আপনার চূড়ান্ত ভিডিওটি প্যারেন্ট ফোল্ডারে (যে ফোল্ডারে ক্যামকর্ডার ফুটেজ আছে ঠিক তার বাহিরে) `final_output.mp4` হিসাবে খুঁজুন
 
 ### লিনাক্স ব্যবহারকারীদের জন্য:
 
 ১. `process_videos.sh` এবং `video_length_estimation.sh` ডাউনলোড করুন
+
 ২. এক্সিকিউটেবল করুন: `chmod +x process_videos.sh video_length_estimation.sh`
+
 ৩. চালান: `./process_videos.sh`
+
 ৪. আপনার চূড়ান্ত ভিডিওটি প্যারেন্ট ফোল্ডারে (যে ফোল্ডারে ক্যামকর্ডার ফুটেজ আছে ঠিক তার বাহিরে) `final_output.mp4` হিসাবে খুঁজুন
 
 ## বৈশিষ্ট্য
@@ -277,8 +283,11 @@ The Bengali version of this self-help guide (Also written by DeepSeek):
 ### সাধারণ সমস্যা:
 
 ১. **"FFmpeg পাওয়া যায়নি"**: FFmpeg ইনস্টল করুন এবং FFMPEG-এর `bin` ফোল্ডার PATH-এ যোগ করুন
+
 ২. **কোন ভিডিও ফাইল পাওয়া যায়নি**: ফাইল এক্সটেনশন সমর্থিত কিনা তা পরীক্ষা করুন
+
 ৩. **ভুল ফাইল অর্ডার**: ফাইলগুলি সংখ্যাসূচকভাবে নামকরণ করা হয়েছে তা নিশ্চিত করুন (001.MTS, 002.MTS, ইত্যাদি)
+
 ৪. **বড় ফাইল সাইজ**: স্ক্রিপ্টে CRF মান বাড়ান
 
 ### পারফরম্যান্স টিপস:
