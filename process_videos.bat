@@ -1,6 +1,6 @@
 :: #########################################################################
 :: # SCRIPT: Video Processing Script - MXF Intermediate Method
-:: # AUTHOR: DeepSeek (https://chat.deepseek.com/)
+:: # AUTHOR: DeepSeek (https://chat.deepseek.com/) (* Feedback provided by Pinaki Sekhar Gupta.)
 :: # CREATED: 2025-Oct-28
 :: # MODIFIED: 2025-Oct-29
 :: #
@@ -26,6 +26,14 @@
 :: # - Remove yadif filter for progressive footage (DSLR/Mirrorless/GoPro/Drone)
 :: # - Adjust CRF value (18-28) for quality/size balance
 :: #########################################################################
+
+:: TECHNICAL NOTES:
+:: - MXF with DNxHR HQ provides frame-accurate editing without GOP issues
+:: - Temporary MXF files are deleted immediately to save disk space
+:: - Files are processed in numerical order (00239.MTS, 00252.MTS, etc.)
+:: - H.264 CRF 23 provides good quality with a reasonable file size
+:: - Audio is converted to AAC 192kbps for compatibility
+:: - De-interlacing uses yadif (yet another de-interlacing filter)
 
 @echo off
 setlocal enabledelayedexpansion
